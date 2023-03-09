@@ -6,6 +6,7 @@ import MarkChatUnreadIcon from '@mui/icons-material/MarkChatUnread';
 import Card from "./Card";
 import LineChart from "./LineChart";
 import DonutChart from "./DonutChart";
+import ProjectCard from "./ProjectsCard";
 
 const Data = [
     {
@@ -55,7 +56,9 @@ const MainDashBoard = () => {
 
 
             <div className="other-section">
-                <div></div>
+                <div>
+                    <ProjectCard />
+                </div>
                 <div></div>
             </div>
         </>
