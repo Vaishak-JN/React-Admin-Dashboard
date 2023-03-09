@@ -4,6 +4,8 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import MarkChatUnreadIcon from '@mui/icons-material/MarkChatUnread';
 import Card from "./Card";
+import LineChart from "./LineChart";
+import DonutChart from "./DonutChart";
 
 const Data = [
     {
@@ -47,6 +49,14 @@ const MainDashBoard = () => {
 
             <div className="chart-section">
                 {/* {Data.map((data) => <Card {...data} />)} */}
+                <LineChart />
+                <DonutChart />
+            </div>
+
+
+            <div className="other-section">
+                <div></div>
+                <div></div>
             </div>
         </>
     )
