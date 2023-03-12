@@ -7,6 +7,9 @@ import Card from "./Card";
 import LineChart from "./LineChart";
 import DonutChart from "./DonutChart";
 import ProjectCard from "./ProjectsCard";
+import IllustrationCard from "./IllustrationCard";
+import Development from "./Development";
+import Colorcard from "./ColorCard";
 
 const Data = [
     {
@@ -35,7 +38,40 @@ const Data = [
     },
 ]
 
-
+const Colors = [
+    {
+        title: "Primary ",
+        color: "#4e73df"
+    },
+    {
+        title: "Success ",
+        color: "#1cc88a"
+    },
+    {
+        title: "Info ",
+        color: "#36b9cc"
+    },
+    {
+        title: "Warning",
+        color: "#f6c23e"
+    },
+    {
+        title: "Danger ",
+        color: "#e74a3b"
+    },
+    {
+        title: "Secondary ",
+        color: "#858796"
+    },
+    {
+        title: "Light",
+        color: "#f8f9fc"
+    },
+    {
+        title: "Dark",
+        color: "#5a5c69"
+    },
+]
 const MainDashBoard = () => {
     return (
         <>
@@ -58,8 +94,15 @@ const MainDashBoard = () => {
             <div className="other-section">
                 <div>
                     <ProjectCard />
+                    <div className="colorcard-container">
+                        {Colors.map((clr, index) => <div key={index} style={{ margin: "0px" }}><Colorcard title={clr.title} color={clr.color} /></div>)}
+                    </div>
                 </div>
-                <div></div>
+
+                <div>
+                    <IllustrationCard />
+                    <Development />
+                </div>
             </div>
         </>
     )

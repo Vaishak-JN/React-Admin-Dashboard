@@ -23,7 +23,7 @@ ChartJS.register(
 
 export const options = {
     responsive: true,
-    cubicInterpolationMode: "monotone"
+    cubicInterpolationMode: "monotone",
 
 };
 
@@ -35,16 +35,19 @@ export const data = {
         {
             label: 'Earnings Overview',
             data: [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000],
-            borderColor: 'rgb(255, 99, 132)',
-            backgroundColor: 'rgba(255, 99, 132, 0.5)',
+            borderColor: '#4e73df',
+            backgroundColor: '#4e73df',
+
         },
 
     ],
+
 };
 
 const LineChart = () => {
     return (
         <div className='linechart'>
+
             <Line options={options} data={data} />
         </div>
 

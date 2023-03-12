@@ -29,7 +29,7 @@ const PROJECTS = [
 const ProjectCard = () => {
     return (
         <CommonCard>
-            <Typography variant="h4" component="h4" sx={{ color: "#395fcf", mb: 1 }}>
+            <Typography variant="h5" component="h5" sx={{ color: "#395fcf", mb: 1 }} className="heading">
                 Projects
             </Typography>
 

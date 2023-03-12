@@ -13,24 +13,25 @@ export const data = {
             data: [12, 19, 3,],
             backgroundColor: [
 
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)',
+                '#36b9cc',
+                '#4e73df',
+                '#1cc88a',
             ],
             borderColor: [
 
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
+                'white',
+                'white',
+                'white',
             ],
             borderWidth: 1,
+            cutout: "70%",
         },
     ],
 };
 const DonutChart = () => {
     return (
         <div className='donutchart'>
-            <Doughnut data={data} />
+            <Doughnut data={data} className="center" />
         </div>
 
 

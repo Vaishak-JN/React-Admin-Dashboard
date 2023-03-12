@@ -5,7 +5,7 @@ const Card = ({ icon, title, amount, color }) => {
             <div className="inner-card">
                 <div>
                     <h4 style={{ color: color }}>{title}</h4>
-                    <h2>{amount}</h2>
+                    <h3 style={{ color: "#5a5c69", marginTop: "10px" }}>{amount}</h3>
                 </div>
                 {icon}
             </div>
